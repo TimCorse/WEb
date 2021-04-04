@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 .Registration--background{
-    background-color: white;
+    background-color: wheat;
     width: 300px;
     height: 400px;
     display: flex;
@@ -61,7 +61,7 @@ body {
     background-position: 4px; 
     outline: none;
     border: none;  
-    
+    background: wheat;
     font-size: 13px;
 }
 
@@ -91,6 +91,7 @@ body {
     background-position: 4px; 
     outline: none;
     border: none;  
+	background: wheat;
     font-size: 13px; 
 }
 
@@ -119,7 +120,8 @@ body {
     background-repeat: no-repeat; 
     background-position: 4px; 
     outline: none;
-    border: none;  
+    border: none; 
+	background: wheat; 
     font-size: 13px; 
 }
 
@@ -128,6 +130,7 @@ body {
     padding-top: 5%;
     display: flex;
     justify-content: center;
+	
 }
 #border--checkbox{
     display: flex;

@@ -20,11 +20,11 @@ const fs = require("fs");
 
 		SRC_DIR + "/stylus",
 		SRC_DIR + "/script",
-		SRC_DIR + "/images",
+		SRC_DIR + "/picture",
 		BUILD_DIR + "/assets",
 		BUILD_DIR + "/assets/css",
 		BUILD_DIR + "/assets/js",
-		BUILD_DIR + "/assets/images",
+		BUILD_DIR + "/assets/picture",
 	],
 	(dir) => {
 		try {
@@ -39,8 +39,8 @@ const fs = require("fs");
 // Создание базовых файлов
 [].forEach.call(
 	[
-		SRC_DIR + "/script/index.js", 
-		SRC_DIR + "/stylus/index.styl"
+		SRC_DIR + "/script/main.js", 
+		SRC_DIR + "/stylus/main.style"
 	],
 	(file) => {
 		try {
@@ -66,7 +66,7 @@ exports.html = html;
 // Обработка стилей
 const styles = () => {
 	return gulp
-		.src(SRC_DIR + "/stylus/index.styl")
+		.src(SRC_DIR + "/stylus/main.styl")
 		.pipe(sourcemaps.init())
 		.pipe(
 			stylus({
@@ -105,7 +105,7 @@ exports.server = server;
 // Обработка JS
 const scripts = () => {
 	return gulp
-		.src(SRC_DIR + "/script/index.js")
+		.src(SRC_DIR + "/script/main.js")
 		.pipe(
 			babel({
 				presets: ["@babel/preset-env"],
@@ -121,7 +121,7 @@ exports.scripts = scripts;
 // Копирование файлов
 const copy = () => {
 	return gulp
-		.src([SRC_DIR + "/images/**/*"], {
+		.src([SRC_DIR + "/picture/**/*"], {
 			base: SRC_DIR,
 		})
 		.pipe(gulp.dest(BUILD_DIR + "/assets"))
@@ -140,11 +140,11 @@ const paths = () => {
 		.pipe(replace(/"stylus\/([^\.]+)\.styl/, '"./assets/css/$1.css'))
 		// .pipe(replace('href="../build', 'href=".'))
 		.pipe(
-			replace(/(<script src=")(script)\/(index.js">)/, "$1./assets/js/$3")
+			replace(/(<script src=")(script)\/(main.js">)/, "$1./assets/js/$3")
 		)
 		// .pipe(replace('src="../build', 'src=".'))
 		// .pipe(replace("upload/", "./assets/images/upload/"))
-		.pipe(replace('"images/', '"./assets/images/'))
+		.pipe(replace('"picture/', '"./assets/picture/'))
 		.pipe(gulp.dest(BUILD_DIR));
 };
 
@@ -157,7 +157,7 @@ const watch = () => {
 	gulp.watch(SRC_DIR + "/*.html", gulp.series(html, paths));
 	gulp.watch(SRC_DIR + "/stylus/**/*.styl", gulp.series(styles));
 	gulp.watch(SRC_DIR + "/script/**/*.js", gulp.series(scripts));
-	gulp.watch([SRC_DIR + "/images/**/*"], gulp.series(copy));
+	gulp.watch([SRC_DIR + "/picture/**/*"], gulp.series(copy));
 };
 
 exports.watch = watch;
