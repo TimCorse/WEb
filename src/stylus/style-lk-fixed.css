@@ -5,14 +5,7 @@
    /* font-size: 1em;*/
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    background: #c6c6c6;
-    height: 100vh;
 
-}
 .btn{outline: none;
     border: none;
     background-color: wheat;
@@ -40,11 +33,11 @@ body {
     padding-top: 5%;
 }
 /*Exit*/
-#Exit{
+/*#Exit{
     outline: none;
     border: none;
     background-color: wheat;
-}
+}*/
 .exit{
     display: flex;
     flex-direction: row;
