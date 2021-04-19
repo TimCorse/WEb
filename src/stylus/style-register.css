@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   /* font-size: 1em;*/
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #c6c6c6;
+    height: 100vh;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Registration--background{
+    background-color: wheat;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    justify-content:flex-start;
+   /* align-items: center;*/
+    text-align: center;
+}
+
+.title{
+    padding-top: 20%;
+
+}
+/*LOGIN*/
+.pick--login{
+    width: 22px;
+    height: 17px;
+    padding-top: 10%;
+    
+}
+.login{
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+#border--login{
+    border: 1px black solid;
+    /*background: url(picture/man-user.svg);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.login--input{
+    /*background: url(picture/man-user.svg) ;   */
+    background-repeat: no-repeat; 
+    background-position: 4px; 
+    outline: none;
+    border: none;  
+    background: wheat;
+    font-size: 13px;
+}
+
+/*PASSWORD*/
+.password{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.pick--password{
+    width: 22px;
+    height: 17px;
+    padding-top: 10%;
+}
+#border--password{
+    border: 1px black solid;
+    /*background: url(picture/man-user.svg);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.password--input{
+   /* background: url(picture/man-user.svg) ;   */
+    background-repeat: no-repeat; 
+    background-position: 4px; 
+    outline: none;
+    border: none;  
+	background: wheat;
+    font-size: 13px; 
+}
+
+/*EMAIL*/
+.email{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.pick--email{
+    width: 22px;
+    height: 17px;
+    padding-top: 10%;
+}
+#border--email{
+    border: 1px black solid;
+    /*background: url(picture/man-user.svg);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.email--input{
+    /*background: url(/src/picture/email.svg) ;   */
+    background-repeat: no-repeat; 
+    background-position: 4px; 
+    outline: none;
+    border: none; 
+	background: wheat; 
+    font-size: 13px; 
+}
+
+/*CheckBox */
+.checkbox{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+	
+}
+#border--checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right:16%;
+}
+
+/*Button*/
+.button{
+    padding-top: 5%;
+    padding-right: 33%;
+}
