@@ -11,24 +11,31 @@
 <body class="body">
     <div class="Registration--background">
         <b class="title">Welcome</b>
+                <!-- <form action="lk.html" onclick="push(event)" > -->
+    <div class="nav">
+        <ul class="sign">
+           <button class="auth">
+               sign in
+           </button>
+         </ul>
+         <button class="reg">
+             sign up
+         </button> 
+           <ul class="sign"> 
+               <!-- <li id="sign--up"><a class="btn">Sign up </a></li> -->
+           </ul>
+            
+        
+    </div>
+    <div class="sign--in">
 
         <div class="login">
             <div id="border--login">
                 <span class="input--img">
                 <img src="images/man-user.svg" alt="" class="pick--login"> 
                 </span>
-                <input type="text" placeholder="login" class="login--input" pattern="[A-Za-z]{1,15} ">
+                <input id="name" type="text" placeholder="name" class="login--input"  required>
             </div> 
-        </div>
-
-        <div class="email ">
-            <div id="border--email">
-                <span class="input--img">
-                <img src="images/email.svg" alt="" class="pick--email"> 
-                </span>
-                <input type="text" placeholder="email" class="email--input" pattern="">
-            </div>
-
         </div>
 
         <div class="password ">
@@ -36,26 +43,67 @@
                 <span class="input--img">
                     <img src="images/lock.svg " class="pick--password" alt="">
                 </span>
-                <input type="password" placeholder="password" class="password--input">
+                <input id="surname" type="text" placeholder="surname" class="password--input" required> 
             </div> 
             
         </div>
 
-        <div class="checkbox ">
-            <div id="border--checkbox">
-                <input type="checkbox" class="CheckBox">
-                <label for="login-remeber" class="CK"> Remember me</label>
+        <div class="email ">
+            <div id="border--email">
+                <span class="input--img">
+                <img src="images/email.svg" alt="" class="pick--email"> 
+                </span>
+                <input id="email" type="email" placeholder="email" class="email--input"  required>
             </div>
         </div>
-            
-        <div class="button">
-            <button >
-                Register
-            </button>
+    </div>    
+
+    <div class="sign--up">
+        <div class="login">
+            <div id="border--login">
+                <span class="input--img">
+                <img src="images/man-user.svg" alt="" class="pick--login"> 
+                </span>
+                <input id="name" type="text" placeholder="name" class="login--input"  required>
+            </div> 
+        </div>
+
+        <div class="password ">
+            <div id="border--password">
+                <span class="input--img">
+                    <img src="images/lock.svg " class="pick--password" alt="">
+                </span>
+                <input id="surname" type="text" placeholder="surname" class="password--input" required> 
+            </div> 
             
         </div>
 
+        <div class="email ">
+            <div id="border--email">
+                <span class="input--img">
+                <img src="images/email.svg" alt="" class="pick--email"> 
+                </span>
+                <input id="email" type="email" placeholder="email" class="email--input"  required>
+            </div>
+        </div>
     </div>
-<script src="script/index.js" ></script>
+    
+
+         <form action="lk.html">
+        <div class="button">
+            <input type="submit" value="Register"  > <a href="lk.html" onclick="push(event)"></a>
+        </div>
+    </form>   
+<!-- </form> -->
+    </div>
+
+     
+
+
+<script type="text/javascript" src="script/index.js" > </script>
+<script type="text/javascript" src="../build/assets/js/reg.js"> </script>
+
+
+
 </body>
 </html>

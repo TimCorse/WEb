@@ -1,6 +1,6 @@
-const express        = require('express');
-const MongoClient    = require('mongodb').MongoClient;
-const bodyParser     = require('body-parser');
+const express       = require('express');
+const MongoClient   = require('mongodb').MongoClient;
+const bodyParser    = require('body-parser');
 const handlebars    = require('express-handlebars')
 
 const db = require('./config/db') 
@@ -30,10 +30,13 @@ mongo.connect((err, client) => {
     }
     const db = client.db("webdev");
     require("./routes/_init")(app, db);
-    app.listen(9000, () => {
+    app.listen(3000, () => {
         console.log('Server is run on localhost:9000');
     })
 })
+
+
+
 
 
 
