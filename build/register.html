@@ -12,53 +12,23 @@
     <div class="Registration--background">
         <b class="title">Welcome</b>
                 <!-- <form action="lk.html" onclick="push(event)" > -->
-    <div class="btn">
-        <ul >
+    <div class="nav">
+        <ul class="sign">
            <button class="auth">
-            authorization
+               sign in
            </button>
          </ul>
          <button class="reg">
-            registration
+             sign up
          </button> 
-           <!-- <ul class="sign"> 
-                <li id="sign--up"><a class="btn">Sign up </a></li> 
-           </ul> -->
+           <ul class="sign"> 
+               <!-- <li id="sign--up"><a class="btn">Sign up </a></li> -->
+           </ul>
             
         
     </div>
-    <div class="sign" id="box1">
-<form action="lk.html" onclick="push(event)" >
-        <div class="login">
-            <div id="border--login">
-                <span class="input--img">
-                <img src="./assets/images/man-user.svg" alt="" class="pick--login"> 
-                </span>
-                <input id="name" type="text" placeholder="nickname" class="login--input"  required>
-            </div> 
-        </div>
+    <div class="sign--in">
 
-        <div class="password ">
-            <div id="border--password">
-                <span class="input--img">
-                    <img src="./assets/images/lock.svg " class="pick--password" alt="">
-                </span>
-                <input id="surname" type="text" placeholder="password" class="password--input" required> 
-            </div> 
-            
-        </div>
-
-        
-        
-            <div class="button">
-                <input type="submit" value="sign in"  > <a href="#" onclick="push(event)"></a>
-            </div>
-    </div>    
-
-    <div class="sign" id="box2">
-        <form action="lk.html" onclick="push(event)" >
-
-            
         <div class="login">
             <div id="border--login">
                 <span class="input--img">
@@ -66,16 +36,6 @@
                 </span>
                 <input id="name" type="text" placeholder="name" class="login--input"  required>
             </div> 
-        </div>
-
-        <div class="password ">
-            <div id="border--password">
-                <span class="input--img">
-                    <img src="./assets/images/lock.svg " class="pick--password" alt="">
-                </span>
-                <input id="surname" type="text" placeholder="surname" class="password--input" required> 
-            </div> 
-            
         </div>
 
         <div class="password ">
@@ -96,67 +56,52 @@
                 <input id="email" type="email" placeholder="email" class="email--input"  required>
             </div>
         </div>
-        <form action="lk.html">
-            <div class="button">
-                <input type="submit" value="Register"  > <a href="#" onclick="push(event)"></a>
-            </div>
-        </form>  
+    </div>    
 
+    <div class="sign--up">
+        <div class="login">
+            <div id="border--login">
+                <span class="input--img">
+                <img src="./assets/images/man-user.svg" alt="" class="pick--login"> 
+                </span>
+                <input id="name" type="text" placeholder="name" class="login--input"  required>
+            </div> 
+        </div>
+
+        <div class="password ">
+            <div id="border--password">
+                <span class="input--img">
+                    <img src="./assets/images/lock.svg " class="pick--password" alt="">
+                </span>
+                <input id="surname" type="text" placeholder="surname" class="password--input" required> 
+            </div> 
+            
+        </div>
+
+        <div class="email ">
+            <div id="border--email">
+                <span class="input--img">
+                <img src="./assets/images/email.svg" alt="" class="pick--email"> 
+                </span>
+                <input id="email" type="email" placeholder="email" class="email--input"  required>
+            </div>
+        </div>
     </div>
     
 
-       
+         <form action="lk.html">
+        <div class="button">
+            <input type="submit" value="Register"  > <a href="lk.html" onclick="push(event)"></a>
+        </div>
+    </form>   
 <!-- </form> -->
     </div>
 
      
 
 
-<script>
-   
-
-   
-    var abtn = document.querySelector('.auth');
-    var btn = document.querySelector('.reg');
-    var auth = document.querySelector('#box1');
-    var reg = document.querySelector('#box2');
-
-    abtn.addEventListener("click", function(){
-        if(auth.style.display=='none'){
-            auth.style.display= 'block';
-            reg.style.display='none'
-        }
-        else{
-            auth.style.display='none';
-        }
-    });
-    btn.addEventListener("click",function(){
-        if(reg.style.display=='none'){
-            reg.style.display='block';
-            auth.style.display= 'none';
-        }
-        else{
-            reg.style.display='none';
-        }
-    });
-
-
-
-
-//     function openbox(id) {
-//   var all = document.querySelectorAll(".sign");
-//   for (var i = 0; i < all.length; i++) {
-//     if (all[i].id == id) {
-//       all[i].style.display = (all[i].style.display == 'none')? 'block' : 'none';
-//     } else {
-//       all[i].style.display = 'none';
-//     }
-//     console.log("lps");
-//   }
-// }
-
-
-</script>
+<script type="text/javascript" src="script/index.js" > </script>
+<script type="text/javascript" src="../build/assets/js/reg.js"> </script>
 
 
 
